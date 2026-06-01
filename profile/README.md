@@ -55,8 +55,8 @@ A collection of composable skills, MCP servers, desktop tools, and reference lib
 **Product on Purpose** is the home for a set of open-source projects that share a single thesis: the work of product management - thinking, framing, deciding, writing, shipping - is on the cusp of a step-change as agentic AI matures. The projects in this org explore three questions in parallel:
 
 1. **What does excellent PM practice look like when an agent can do the rote work?** (see `pm-skills`, `pm-skills-mcp`, `thinking-framework-skills`)
-2. **How should we configure, orchestrate, and trust the agents we work with?** (see `agent-config-toolkit`, `agent-helper`, `agent-skill-toolkit`)
-3. **What infrastructure do we need around AI artifacts and outputs so they don't rot?** (see `project-knowledge-os`, `repo-sync-tool`, `writing-style-library`)
+2. **How should we configure, orchestrate, and trust the agents we work with?** (see `agent-config-toolkit`, `agent-skill-toolkit`)
+3. **What infrastructure do we need around AI artifacts and outputs so they don't rot?** (see `writing-style-library`)
 
 Each project is independent, open-source (Apache-2.0 unless noted), and usable on its own. Together they form a working portfolio for the AI-native product practitioner.
 
