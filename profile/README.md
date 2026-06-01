@@ -69,12 +69,9 @@ Each project is independent, open-source (Apache-2.0 unless noted), and usable o
 | [**pm-skills**](./pm-skills)                                 | 59 plug-and-play PM agent skills (Foundation Sprint, Design Sprint, lifecycle phases, utilities, tools). | `Active · v2.16.0`      | Markdown skills, Astro docs  |
 | [**pm-skills-mcp**](./pm-skills-mcp)                         | MCP server exposing the PM skill catalog to any agent that speaks Model Context Protocol. | `Maintenance`           | TypeScript, MCP SDK          |
 | [**writing-style-library**](./writing-style-library)         | Composable catalog of writing instructions across three orthogonal axes (Voice/Tone, Style, Format). | `Active · v0.1.0`       | Plugin + Py/TS SDKs          |
-| [**thinking-framework-skills**](./thinking-framework-skills) | Skills wrapping canonical thinking tools (Six Hats, First Principles, etc.) for agent-driven reasoning. | `Discovery`             | Markdown skills              |
-| [**agent-config-toolkit**](./agent-config-toolkit)           | Audits AGENTS.md / CLAUDE.md / `.claude/` config quality, security, and cross-platform consistency. | `Active`                | Skills + CLI (Node)          |
-| [**agent-helper**](./agent-helper)                           | Internal toolkit prototypes for agent setup and discovery.   | `Discovery`             | Prototype                    |
+| [**thinking-framework-skills**](./thinking-framework-skills) | Skills wrapping canonical thinking tools (Six Hats, First Principles, etc.) for agent-driven reasoning. | `Discovery`             | 
 | [**agent-skill-toolkit**](./agent-skill-toolkit)             | Tooling for authoring, validating, and packaging agent skills. | `Discovery`             | Prototype                    |
 | [**project-knowledge-os**](./project-knowledge-os)           | Local-first system for managing AI-generated artifacts (PRDs, research, decisions) across projects. | `Planning`              | TBD (Tauri likely)           |
-| [**repo-sync-tool**](./repo-sync-tool)                       | Cross-platform tray app that keeps a personal library of cloned repos fresh and visible. | `Planning · Draft v0.1` | Tauri 2, Rust, React, SQLite |
 
 > See the [Status Legend](#-status-legend) for what each label means.
 
@@ -90,8 +87,6 @@ A quick router. Pick the row that matches your situation.
 | Apply a structured thinking framework to a problem          | [`thinking-framework-skills`](./thinking-framework-skills)   |
 | Make AI-generated writing sound less like AI                | [`writing-style-library`](./writing-style-library)           |
 | Audit your `CLAUDE.md` / `AGENTS.md` for quality and safety | [`agent-config-toolkit`](./agent-config-toolkit)             |
-| Organize PRDs, research, and decisions across projects      | [`project-knowledge-os`](./project-knowledge-os)             |
-| Keep your local repo collection fresh                       | [`repo-sync-tool`](./repo-sync-tool)                         |
 
 ---
 
@@ -112,7 +107,6 @@ Skills, frameworks, and reference material for doing the actual work of product 
 Tools for building, configuring, and trusting the agents themselves.
 
 - **[agent-config-toolkit](./agent-config-toolkit)** - reads `CLAUDE.md`, `AGENTS.md`, `.claude/settings.json`, `.mcp.json` and grades them on quality, security, and cross-platform consistency.
-- **[agent-helper](./agent-helper)** - early prototypes for agent setup workflows.
 - **[agent-skill-toolkit](./agent-skill-toolkit)** - tooling for authoring, validating, and shipping agent skills.
 
 ### 3. Writing & Thinking
@@ -120,13 +114,6 @@ Tools for building, configuring, and trusting the agents themselves.
 Composable instructions for how an agent should sound and reason.
 
 - **[writing-style-library](./writing-style-library)** - three-axis model (Voice & Tone, Style/Mode/Genre, Format/Output) plus a composer that mixes them into a ready-to-prepend prompt prefix.
-
-### 4. Knowledge & Repo Ops
-
-Infrastructure around the artifacts AI agents produce, and the codebases they touch.
-
-- **[project-knowledge-os](./project-knowledge-os)** - "Layer 2" between AI platforms and domain skill libraries: a local-first, platform-agnostic system for managing AI-generated artifacts (PRDs, research, decisions, analyses) across projects and sessions.
-- **[repo-sync-tool](./repo-sync-tool)** - desktop tray app (Tauri 2 + Rust + React) that keeps a personal library of cloned-but-not-actively-developed repos fetched, fresh, and easy to launch.
 
 ---
 
@@ -139,11 +126,7 @@ product-on-purpose/
 ├── thinking-framework-skills/  # Thinking frameworks as skills
 ├── writing-style-library/      # Composable writing instructions
 ├── agent-config-toolkit/       # Config quality / security auditor
-├── agent-helper/               # Early agent setup prototypes
 ├── agent-skill-toolkit/        # Skill authoring tools
-├── project-knowledge-os/       # AI artifact management infrastructure
-├── repo-sync-tool/             # Personal repo library keeper (Tauri)
-├── backup/                     # Versioned snapshots
 └── README.md                   # You are here
 ```
 
