@@ -71,7 +71,6 @@ Each project is independent, open-source (Apache-2.0 unless noted), and usable o
 | [**writing-style-library**](./writing-style-library)         | Composable catalog of writing instructions across three orthogonal axes (Voice/Tone, Style, Format). | `Active · v0.1.0`       | Plugin + Py/TS SDKs          |
 | [**thinking-framework-skills**](./thinking-framework-skills) | Skills wrapping canonical thinking tools (Six Hats, First Principles, etc.) for agent-driven reasoning. | `Discovery`             | 
 | [**agent-skill-toolkit**](./agent-skill-toolkit)             | Tooling for authoring, validating, and packaging agent skills. | `Discovery`             | Prototype                    |
-| [**project-knowledge-os**](./project-knowledge-os)           | Local-first system for managing AI-generated artifacts (PRDs, research, decisions) across projects. | `Planning`              | TBD (Tauri likely)           |
 
 > See the [Status Legend](#-status-legend) for what each label means.
 
