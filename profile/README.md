@@ -4,9 +4,7 @@
 
 # Product on Purpose
 
-**An open-source portfolio for building products with intent, augmented by AI agents.**
-
-Composable skills, MCP servers, and reference libraries for product managers, builders, and the agents that work alongside them.
+**Open-source tools for product managers and the AI agents working alongside them.**
 
 <p>
   <img src="https://img.shields.io/badge/AI--native-yes-purple?style=flat-square" alt="AI-native">
@@ -16,96 +14,111 @@ Composable skills, MCP servers, and reference libraries for product managers, bu
 
 </div>
 
----
+A general-purpose AI agent is a blank slate. Product on Purpose fills it in: open-source skills, tools, and libraries that turn an everyday agent into a capable partner for product work, one composable piece at a time.
 
-## About
-
-> *"Build products on purpose, not by accident."*
-
-**Product on Purpose** builds open-source tools around a single bet: as agentic AI matures, product management itself is about to change shape, from how we think and frame to how we decide, write, and ship. Rather than wait to find out, these projects put that bet to work.
-
-Each one chases a different question:
-
-1. **What does great PM practice look like once an agent handles the rote work?**
-2. **How do we configure, orchestrate, and genuinely trust the agents we work with?**
-3. **What infrastructure keeps the artifacts agents produce from rotting?**
-
-Every project stands on its own: independent, usually Apache-2.0, and useful in isolation. Together they form a working toolkit for the AI-native product practitioner.
-
----
-
-## Featured Projects
-
-### PM Practice
-
-Skills and frameworks for doing the actual work of product management.
-
-- **[pm-skills](https://github.com/product-on-purpose/pm-skills)** `Active`
-  63 plug-and-play PM skills for AI agents spanning Foundation Sprint, Design Sprint, lifecycle phases, utilities, and tools, with sub-agents, templates, and CI-enforced contracts.
-- **[pm-skills-mcp](https://github.com/product-on-purpose/pm-skills-mcp)** `Maintenance`
-  The same catalog served over Model Context Protocol (59 tools), callable by any MCP-speaking agent. New users should prefer the file-based install from `pm-skills`.
-- **[thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills)** `Active`
-  34 agent-executable thinking methods plus 5 recipes, each stripped to its working mechanism, evidence-graded, and built to produce a concrete artifact.
-
-### Agent Infrastructure
-
-Tools for building, configuring, and trusting the agents themselves.
-
-- **[agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit)** `Active`
-  A toolkit and standard for building, grading, and scaling cross-agent skill libraries (Claude Code and Codex) against a Bronze/Silver/Gold quality bar.
-- **[agent-plugins](https://github.com/product-on-purpose/agent-plugins)** `Active`
-  The Product on Purpose plugin marketplace for Claude Code. Add it once, then install anything in the ecosystem.
-
-### Writing
-
-Composable instructions for how an agent should sound on the page.
-
-- **[writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)** `Experimental`
-  Composable writing instructions for AI agents across four orthogonal axes: Voice, Tone, Style, and Format.
-
----
-
-## Find Your Way In
-
-A quick router. Pick the row that matches your situation.
-
-| If you want to... | Start here |
+| Repo | What it is |
 |---|---|
-| Use AI to do better PM work | [`pm-skills`](https://github.com/product-on-purpose/pm-skills) (or [`pm-skills-mcp`](https://github.com/product-on-purpose/pm-skills-mcp) for an MCP server) |
-| Apply a structured thinking framework to a problem | [`thinking-framework-skills`](https://github.com/product-on-purpose/thinking-framework-skills) |
-| Make AI-generated writing sound less like AI | [`writing-style-catalog`](https://github.com/product-on-purpose/writing-style-catalog) |
-| Build and grade your own cross-agent skill library | [`agent-skills-toolkit`](https://github.com/product-on-purpose/agent-skills-toolkit) |
-| Install our plugins in Claude Code | [`agent-plugins`](https://github.com/product-on-purpose/agent-plugins) |
+| [**pm-skills**](https://github.com/product-on-purpose/pm-skills) | 65 plug-and-play product management skills covering the full product lifecycle. |
+| [**thinking-framework-skills**](https://github.com/product-on-purpose/thinking-framework-skills) | Evidence-graded thinking methods an agent can run to reason, not just chat. |
+| [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) | A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar. |
+| [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) | Composable writing instructions so AI prose lands in the voice you actually want. |
+| [**agent-plugins**](https://github.com/product-on-purpose/agent-plugins) | The marketplace that puts every Product on Purpose plugin one command away. |
+| [**pm-skills-mcp**](https://github.com/product-on-purpose/pm-skills-mcp) | The PM catalog as an MCP server (maintenance mode). |
 
----
+**Get started.** Most of these install as Claude Code plugins. Add the marketplace once, then grab any plugin below:
 
-## Install via the Marketplace
-
-Most of the skill libraries above ship as Claude Code plugins. Add the marketplace once:
-
-```text
+```bash
 /plugin marketplace add product-on-purpose/agent-plugins
 ```
 
-Then browse and install any plugin in the ecosystem with `/plugin`.
+---
+
+## [pm-skills](https://github.com/product-on-purpose/pm-skills)
+*Flagship · Active · 65 skills · 4 sub-agents · 10 workflows · templates · 95+ samples*
+
+The flagship of the portfolio and the place most people should start. It hands your agent a curated set of best-practice product workflows to run on demand, end to end.
+
+- **Stop prompting PM work from scratch.** Each skill is a best-practice workflow (PRDs, hypotheses, user stories, sprint facilitation) that you invoke by name instead of re-explaining the method every time.
+- **Covers the whole lifecycle.** From Foundation Sprint and Design Sprint at the fuzzy front end through discovery, delivery, and iteration, with sub-agents and workflow orchestrators that chain skills into full routines.
+- **Quality you can see.** 95+ real-world sample outputs set the bar, and CI-enforced contracts keep every skill conformant as the catalog grows.
+
+```bash
+/plugin install pm-skills@product-on-purpose
+```
+
+## [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills)
+*Active · 34 skills · 5 recipes · evidence-graded*
+
+Structured reasoning your agent can actually execute, not just name-drop. Think of it as a toolbox of decision-making moves, each one graded so you know how far to trust it.
+
+- **Agents reason better with a method.** Canonical thinking tools (premortems, first principles, parallel-perspective review) packaged so an agent runs the actual move, not a vague impression of it.
+- **Honest about the evidence.** Every skill carries a transparent grade, from replicated research down to practitioner heuristic, so you know how far to trust it. No laundered statistics.
+- **Always ends in an artifact.** Each run hands back something usable, a risk register, an option matrix, an argument map, rather than more prose.
+
+```bash
+/plugin install thinking-framework-skills@product-on-purpose
+```
+
+## [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit)
+*Active · Standard + toolkit · 23 skills · 25 checks · Gold-in-CI*
+
+The meta-layer for anyone authoring skills at scale. It defines what a great, multi-agent skill library looks like, then gives you the tooling to prove yours measures up.
+
+- **For people building skills, not just using them.** A toolkit and a normative Standard for authoring skill libraries that work across Claude Code and Codex from a single source.
+- **A quality bar you can climb.** Grades a whole library against a tiered Bronze/Silver/Gold rubric and returns a burndown of exactly what blocks the next tier.
+- **Deterministic, not vibes.** Zero-dependency Node validators with real exit codes, and the repo self-validates at Gold in its own CI as the proof.
+
+```bash
+git clone https://github.com/product-on-purpose/agent-skills-toolkit.git
+```
+
+## [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
+*Experimental · 60 entries · 4 axes (Voice/Tone/Style/Format)*
+
+Composable control over how an agent sounds on the page. It turns "make it sound professional" into a precise, reusable instruction you can drop onto any writing task.
+
+- **Make AI writing stop sounding like AI.** Compose precise, reusable instructions from named building blocks instead of retyping "make it sound professional" and hoping.
+- **Four orthogonal axes.** Mix Voice, Tone, Style, and Format independently to dial in exactly the register and shape a piece needs.
+- **Worked examples, not vibes.** Every entry ships with samples that show what it actually produces, so you can see a style before you commit to it.
+
+```bash
+git clone https://github.com/product-on-purpose/writing-style-catalog.git
+```
+
+## [agent-plugins](https://github.com/product-on-purpose/agent-plugins)
+*Marketplace · Active · Claude Code*
+
+The registry that ties the whole ecosystem together. It is how every plugin above becomes a one-line install inside Claude Code.
+
+- **One front door to everything.** The Claude Code marketplace registry for the whole portfolio: add it once and every Product on Purpose plugin is a single command away.
+- **Deliberately thin.** No plugin code lives here, just the index, so it stays fast to load and easy to trust.
+
+```bash
+/plugin marketplace add product-on-purpose/agent-plugins
+```
 
 ---
 
-## Philosophy
+## [pm-skills-mcp](https://github.com/product-on-purpose/pm-skills-mcp)
+*MCP server · Maintenance · 59 tools (40 skills, 11 workflows, 8 utilities)*
 
-A few opinions that shape the work across the portfolio.
+The same product management catalog, delivered over the Model Context Protocol for agents that prefer native tools to files.
 
-- **Composable over monolithic.** Small skills, clean boundaries. Pull one piece without inheriting the rest.
-- **Open-source by default.** Apache-2.0 unless there is a deliberate reason to choose otherwise.
-- **Agent-native, not agent-translated.** Designed for an agent reader from the start, not human docs an agent happens to consume.
-- **Local-first where it matters.** Knowledge and configuration live on disk, owned by the user.
-- **Every line of context earns its place.** Frontier models reliably follow roughly 150 to 200 instructions. Bloat is the enemy of quality.
+- **The PM catalog over Model Context Protocol.** Exposes 59 tools to any MCP-aware agent with no file setup.
+- **Stable, but paused.** Fully functional at v2.9.3; active development is on hold, so new users are better served by the file-based install from `pm-skills`.
+
+```bash
+npm install -g pm-skills-mcp
+```
 
 ---
 
-## Maintainer
+<div align="center">
 
-**Jeremy Prisant** ([@jprisant](https://github.com/jprisant))
-Building product, on purpose.
+Built and maintained by **Jonathan Prisant**, a product leader in church technology who gets unreasonably excited about solving problems, serving people, and designing elegant systems.
+
+[@jprisant](https://github.com/jprisant)
+
+</div>
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
