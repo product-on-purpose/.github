@@ -1,0 +1,10 @@
+# Local tooling and scratch directories - not for version control
+
+# MemSearch plugin local memory and index
+.memsearch/
+
+# Local-only working files (never committed or pushed)
+_local/
+
+# Archived drafts and superseded content
+_archived/
