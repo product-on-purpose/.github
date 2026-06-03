@@ -16,14 +16,12 @@
 
 A general-purpose AI agent is a blank slate. Product on Purpose fills it in: open-source skills, tools, and libraries that turn an everyday agent into a capable partner for product work, one composable piece at a time.
 
-| Repo | What it is |
-|---|---|
-| 🧭 [**pm-skills**](https://github.com/product-on-purpose/pm-skills) | 65 plug-and-play product management skills covering the full product lifecycle. |
-| 🤔 [**thinking-framework-skills**](https://github.com/product-on-purpose/thinking-framework-skills) | Evidence-graded thinking methods an agent can run to reason, not just chat. |
-| 🤖 [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) | A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar. |
-| ✍️ [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) | Composable writing instructions so AI prose lands in the voice you actually want. |
-| 🧩 [**agent-plugins**](https://github.com/product-on-purpose/agent-plugins) | The marketplace that puts every Product on Purpose plugin one command away. |
-| 🧰 [**pm-skills-mcp**](https://github.com/product-on-purpose/pm-skills-mcp) | The PM catalog as an MCP server (maintenance mode). |
+- 🧭 [**pm-skills**](https://github.com/product-on-purpose/pm-skills) - 65 plug-and-play product management skills covering the full product lifecycle.
+- 🤔 [**thinking-framework-skills**](https://github.com/product-on-purpose/thinking-framework-skills) - Evidence-graded thinking methods an agent can run to reason, not just chat.
+- 🤖 [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) - A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar.
+- ✍️ [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) - Composable writing instructions so AI prose lands in the voice you actually want.
+- 🧩 [**agent-plugins**](https://github.com/product-on-purpose/agent-plugins) - The marketplace that puts every Product on Purpose plugin one command away.
+- 🧰 [**pm-skills-mcp**](https://github.com/product-on-purpose/pm-skills-mcp) - The PM catalog as an MCP server (maintenance mode).
 
 ### Install the Marketplace
 **Get started.** Most of these install as Claude Code plugins. Add the marketplace once, then grab any plugin below:
