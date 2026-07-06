@@ -16,7 +16,7 @@
 
 A general-purpose AI agent is a blank slate. Product on Purpose fills it in: open-source skills, tools, and libraries that turn an everyday agent into a capable partner for product work, one composable piece at a time.
 
-- 🧭 [**pm-skills**](https://github.com/product-on-purpose/pm-skills) - 65 plug-and-play product management skills covering the full product lifecycle.
+- 🧭 [**pm-skills**](https://github.com/product-on-purpose/pm-skills) - 68 plug-and-play product management skills covering the full product lifecycle.
 - 🤔 [**thinking-framework-skills**](https://github.com/product-on-purpose/thinking-framework-skills) - Evidence-graded thinking methods an agent can run to reason, not just chat.
 - 🤖 [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) - A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar.
 - ✍️ [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) - Composable writing instructions so AI prose lands in the voice you actually want.
@@ -33,7 +33,7 @@ A general-purpose AI agent is a blank slate. Product on Purpose fills it in: ope
 ---
 
 ## 🧭 [pm-skills](https://github.com/product-on-purpose/pm-skills)
-*🟢 Active · 🚀 Flagship · 65 skills · 4 sub-agents · 10 workflows · templates · 95+ samples*
+*🟢 Active · 🚀 Flagship · 68 skills · 6 sub-agents · 12 workflows · templates · 200+ samples*
 
 ```bash
 /plugin install pm-skills@product-on-purpose
@@ -43,10 +43,10 @@ The flagship of the portfolio and the place most people should start. It hands y
 
 - **Stop prompting PM work from scratch.** Each skill is a best-practice workflow (PRDs, hypotheses, user stories, sprint facilitation) that you invoke by name instead of re-explaining the method every time.
 - **Covers the whole lifecycle.** From Foundation Sprint and Design Sprint at the fuzzy front end through discovery, delivery, and iteration, with sub-agents and workflow orchestrators that chain skills into full routines.
-- **Quality you can see.** 95+ real-world sample outputs set the bar, and CI-enforced contracts keep every skill conformant as the catalog grows.
+- **Quality you can see.** 200+ real-world sample outputs set the bar, and CI-enforced contracts keep every skill conformant as the catalog grows.
 
 ## 🤔 [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills)
-*🟢 Active · 34 skills · 5 recipes · evidence-graded*
+*🟢 Active · 63 skills · 4 meta-tools · 9 recipes · evidence-graded*
 
 ```bash
 /plugin install thinking-framework-skills@product-on-purpose
@@ -59,7 +59,7 @@ Structured reasoning your agent can actually execute, not just name-drop. Think 
 - **Always ends in an artifact.** Each run hands back something usable, a risk register, an option matrix, an argument map, rather than more prose.
 
 ## 🤖 [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit)
-*🟢 Active · Standard + toolkit · 23 skills · 25 checks · Gold-in-CI*
+*🟢 Active · Standard v0.12 · 23 skills · 30 checks · Gold-in-CI*
 
 ```bash
 /plugin install agent-skills-toolkit@product-on-purpose
@@ -72,7 +72,7 @@ The meta-layer for anyone authoring skills at scale. It defines what a great, mu
 - **Deterministic, not vibes.** Zero-dependency Node validators with real exit codes, and the repo self-validates at Gold in its own CI as the proof.
 
 ## ✍️ [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
-*🟢 Active · 🧪 Experimental · 60 entries · 4 axes (Voice/Tone/Style/Format)*
+*🟢 Active · 🧪 Experimental · 97 entries · 1,164 examples · 130 diff-pairs · 14 recipes · 4 axes (Voice/Tone/Style/Format)*
 
 ```bash
 /plugin install writing-style-catalog@product-on-purpose
