@@ -20,6 +20,7 @@ A general-purpose AI agent is a blank slate. Product on Purpose fills it in: ope
 - 🤔 [**thinking-framework-skills**](https://github.com/product-on-purpose/thinking-framework-skills) - Evidence-graded thinking methods an agent can run to reason, not just chat.
 - 🤖 [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) - A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar.
 - ✍️ [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) - Composable writing instructions so AI prose lands in the voice you actually want.
+- 🔍 [**critique-skills**](https://github.com/product-on-purpose/critique-skills) - Critique that cites a published rubric on every finding, and publishes how often it is right.
 - 🧩 [**agent-plugins**](https://github.com/product-on-purpose/agent-plugins) - The marketplace that puts every Product on Purpose plugin one command away.
 - 🧰 [**pm-skills-mcp**](https://github.com/product-on-purpose/pm-skills-mcp) - The PM catalog as an MCP server (maintenance mode).
 
@@ -83,6 +84,19 @@ Composable control over how an agent sounds on the page. It turns "make it sound
 - **Make AI writing stop sounding like AI.** Compose precise, reusable instructions from named building blocks instead of retyping "make it sound professional" and hoping.
 - **Four orthogonal axes.** Mix Voice, Tone, Style, and Format independently to dial in exactly the register and shape a piece needs.
 - **Worked examples, not vibes.** Every entry ships with samples that show what it actually produces, so you can see a style before you commit to it.
+
+## 🔍 [critique-skills](https://github.com/product-on-purpose/critique-skills)
+*🟢 Active · 🆕 New · 6 skills · 1 sub-agent · 96 criteria · 502 recorded runs · Convergent (Silver)*
+
+```bash
+/plugin install critique-skills@product-on-purpose
+```
+
+Review you can check instead of just trust. Ask a general-purpose model to critique your work and you get fluent, confident, forgettable commentary; these skills answer to a published rubric instead, and report how often they actually catch what is there.
+
+- **Every finding cites a source.** Each skill operationalizes a published external standard (WCAG 2.2, Nielsen's heuristics, Diataxis, the Toulmin model, the Federal Plain Language Guidelines), so every defect it raises carries a permanent criterion ID you can look up and argue with.
+- **Findings are records, not prose.** Output conforms to a frozen JSON Schema, so a critique can be diffed, filtered, tracked across revisions, or handed to another tool rather than read once and lost.
+- **It publishes its own scorecard.** Measured against a corpus with deliberately planted defects, unflattering numbers first: recall, precision, and run-to-run consistency, with the weak axes named rather than buried.
 
 ## 🧩 [agent-plugins](https://github.com/product-on-purpose/agent-plugins)
 *🟢 Active · Marketplace · Claude Code*
