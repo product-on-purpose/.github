@@ -21,6 +21,7 @@ A general-purpose AI agent is a blank slate. Product on Purpose fills it in: ope
 - 🤖 [**agent-skills-toolkit**](https://github.com/product-on-purpose/agent-skills-toolkit) - A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar.
 - ✍️ [**writing-style-catalog**](https://github.com/product-on-purpose/writing-style-catalog) - Composable writing instructions so AI prose lands in the voice you actually want.
 - 🔍 [**critique-skills**](https://github.com/product-on-purpose/critique-skills) - Critique that cites a published rubric on every finding, and publishes how often it is right.
+- 📐 [**product-lifecycle-templates**](https://github.com/product-on-purpose/product-lifecycle-templates) - Governed document templates that ship with the research, the guide, and a worked example.
 - 🧩 [**agent-plugins**](https://github.com/product-on-purpose/agent-plugins) - The marketplace that puts every Product on Purpose plugin one command away.
 - 🧰 [**pm-skills-mcp**](https://github.com/product-on-purpose/pm-skills-mcp) - The PM catalog as an MCP server (maintenance mode).
 
@@ -34,7 +35,7 @@ A general-purpose AI agent is a blank slate. Product on Purpose fills it in: ope
 ---
 
 ## 🧭 [pm-skills](https://github.com/product-on-purpose/pm-skills)
-*🟢 Active · 🚀 Flagship · 68 skills · 6 sub-agents · 12 workflows · templates · 200+ samples*
+*🟢 Active · 🚀 Flagship · v2.31.1 · 68 skills · 6 sub-agents · 12 workflows · 200+ samples*
 
 ```bash
 /plugin install pm-skills@product-on-purpose
@@ -47,7 +48,7 @@ The flagship of the portfolio and the place most people should start. It hands y
 - **Quality you can see.** 200+ real-world sample outputs set the bar, and CI-enforced contracts keep every skill conformant as the catalog grows.
 
 ## 🤔 [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills)
-*🟢 Active · 63 skills · 4 meta-tools · 9 recipes · evidence-graded*
+*🟢 Active · v0.13.0 · 63 frameworks · 4 meta-tools · 9 recipes · evidence-graded · Advanced (Gold)*
 
 ```bash
 /plugin install thinking-framework-skills@product-on-purpose
@@ -60,7 +61,7 @@ Structured reasoning your agent can actually execute, not just name-drop. Think 
 - **Always ends in an artifact.** Each run hands back something usable, a risk register, an option matrix, an argument map, rather than more prose.
 
 ## 🤖 [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit)
-*🟢 Active · Standard v0.12 · 23 skills · 30 checks · Gold-in-CI*
+*🟢 Active · v1.9.0 · Standard v0.12 · 24 skills · 30 checks · Gold-in-CI*
 
 ```bash
 /plugin install agent-skills-toolkit@product-on-purpose
@@ -73,7 +74,7 @@ The meta-layer for anyone authoring skills at scale. It defines what a great, mu
 - **Deterministic, not vibes.** Zero-dependency Node validators with real exit codes, and the repo self-validates at Gold in its own CI as the proof.
 
 ## ✍️ [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
-*🟢 Active · 🧪 Experimental · 97 entries · 1,164 examples · 130 diff-pairs · 14 recipes · 4 axes (Voice/Tone/Style/Format)*
+*🟢 Active · 🧪 Experimental · v0.13.0 · 97 entries · 1,164 examples · 158 diff-pairs · 14 recipes · 4 axes (Voice/Tone/Style/Format)*
 
 ```bash
 /plugin install writing-style-catalog@product-on-purpose
@@ -86,7 +87,7 @@ Composable control over how an agent sounds on the page. It turns "make it sound
 - **Worked examples, not vibes.** Every entry ships with samples that show what it actually produces, so you can see a style before you commit to it.
 
 ## 🔍 [critique-skills](https://github.com/product-on-purpose/critique-skills)
-*🟢 Active · 🆕 New · 6 skills · 1 sub-agent · 96 criteria · 502 recorded runs · Convergent (Silver)*
+*🟢 Active · 🆕 New · v0.1.1 · 6 skills · 1 sub-agent · 96 criteria · 502 recorded runs · Convergent (Silver)*
 
 ```bash
 /plugin install critique-skills@product-on-purpose
@@ -98,8 +99,21 @@ Review you can check instead of just trust. Ask a general-purpose model to criti
 - **Findings are records, not prose.** Output conforms to a frozen JSON Schema, so a critique can be diffed, filtered, tracked across revisions, or handed to another tool rather than read once and lost.
 - **It publishes its own scorecard.** Measured against a corpus with deliberately planted defects, unflattering numbers first: recall, precision, and run-to-run consistency, with the weak axes named rather than buried.
 
+## 📐 [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates)
+*🟡 Beta · v0.1.0 · 25 bundles · 8 families · lean/full sizes · CI-gated*
+
+```bash
+git clone https://github.com/product-on-purpose/product-lifecycle-templates.git
+```
+
+The document layer underneath the work. Where `pm-skills` runs the method, this decides what the resulting artifact should actually look like, and defends that shape with research rather than taste.
+
+- **A bundle, not a blank file.** Every document type ships five pieces together: the blank shape you fill in, a companion explaining why it is shaped that way, a fast operator card, a fully worked example, and machine-readable metadata an agent can route on.
+- **Sized to your context window.** Each type offers `lean` and `full` variants with published token budgets, so an agent pulls the version that fits the job instead of blowing context on a template built for a different scale.
+- **Cited, and gated on staying that way.** Shapes are argued from primary sources, and CI enforces the claims: bundle completeness, link health, research logs, manifest freshness, and even the repo's own self-reported counts.
+
 ## 🧩 [agent-plugins](https://github.com/product-on-purpose/agent-plugins)
-*🟢 Active · Marketplace · Claude Code*
+*🟢 Active · Marketplace · 5 plugins · Claude Code*
 
 ```bash
 /plugin marketplace add product-on-purpose/agent-plugins
@@ -113,7 +127,7 @@ The registry that ties the whole ecosystem together. It is how every plugin abov
 ---
 
 ## 🧰 [pm-skills-mcp](https://github.com/product-on-purpose/pm-skills-mcp)
-*🟤 Maintenance · MCP server · 59 tools (40 skills, 11 workflows, 8 utilities)*
+*🟤 Maintenance · v2.9.3 · MCP server · 59 tools (40 skills, 11 workflows, 8 utilities)*
 
 ```bash
 npm install -g pm-skills-mcp
