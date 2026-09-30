@@ -7,60 +7,68 @@
 **Open-source tools for product managers and the AI agents working alongside them.**
 
 <p>
-  <img src="https://img.shields.io/badge/AI--native-yes-purple?style=flat-square" alt="AI-native">
-  <img src="https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square" alt="License: Apache-2.0 (per project)">
   <img src="https://img.shields.io/badge/maintainer-%40jprisant-orange?style=flat-square" alt="Maintainer: @jprisant">
 </p>
 
 </div>
 
-A general-purpose AI agent is a blank slate. Product on Purpose fills it in: open-source skills, tools, and libraries that turn an everyday agent into a capable partner for product work, one composable piece at a time.
+A general-purpose AI agent is a blank slate. Product on Purpose fills it in: open-source skills, tools, and libraries that turn an everyday agent into a capable partner for product work, one composable piece at a time. Tools for people who tinker or live in their editors, agents, and file systems live in the sibling org, [Prisant Labs](https://github.com/prisant-labs).
 
-Version badges on this page update themselves. Status chips and status lines are written by hand and say plainly how far along each project is: 🟢 active, 🧪 experimental, 🟡 pre-release, 🟤 maintenance.
+Version badges on this page update themselves. Everything else is written by hand, including a plain status line for each project.
 
-## Install the Marketplace
+**Status:** 🟢 Stable, meaning 1.0 or later, or a live service · 🟡 Beta, meaning released but not yet 1.0 · 🟠 Pre-release, meaning no release yet, so you build from source · 🟤 Maintenance, meaning it works but is no longer developed
 
-**Get started.** Most of these install as Claude Code plugins. Add the marketplace once, then grab any plugin below:
+**Tags:** 🚀 Start here · 🆕 New, meaning public for under 30 days · 🧪 Experimental
 
-```bash
+## Get started
+
+Most of these install as Claude Code plugins. Add the marketplace once, then install any plugin below:
+
+```
 /plugin marketplace add product-on-purpose/agent-plugins
 ```
 
 ## At a glance
 
-**[Product work](#product-work)**
+**💼 [Product work](#-product-work)**
 
-- 🧭 [**pm-skills**](#-pm-skills) - 68 plug-and-play product management skills covering the full product lifecycle · *active, flagship*
-- 📐 [**product-lifecycle-templates**](#-product-lifecycle-templates) - Governed document templates that ship with the research, the guide, and a worked example · *experimental*
-- 🧰 [**pm-skills-mcp**](#-pm-skills-mcp) - The PM catalog as an MCP server · *maintenance*
+- 🧭 [pm-skills](#-pm-skills) - 68 plug-and-play product management skills covering the full product lifecycle · 🟢 Stable · 🚀 Start here
+- 📐 [product-lifecycle-templates](#-product-lifecycle-templates) - governed document templates that ship with the research, the guide, and a worked example · 🟡 Beta · 🧪 Experimental
 
-**[Thinking, writing, and critique](#thinking-writing-and-critique)**
+**🧠 [Thinking, writing, and critique](#-thinking-writing-and-critique)**
 
-- 🤔 [**thinking-framework-skills**](#-thinking-framework-skills) - Evidence-graded thinking methods an agent can run to reason, not just chat · *active*
-- 🔍 [**critique-skills**](#-critique-skills) - Critique that cites a published rubric on every finding, and publishes how often it is right · *pre-release*
-- ✍️ [**writing-style-catalog**](#️-writing-style-catalog) - Composable writing instructions so AI prose lands in the voice you actually want · *experimental*
+- 🤔 [thinking-framework-skills](#-thinking-framework-skills) - evidence-graded thinking methods an agent can run to reason, not just chat · 🟡 Beta · 🚀 Start here
+- 🔍 [critique-skills](#-critique-skills) - critique that cites a published rubric on every finding, and publishes how often it is right · 🟡 Beta
+- 🎨 [writing-style-catalog](#-writing-style-catalog) - composable writing instructions so AI prose lands in the voice you actually want · 🟡 Beta · 🧪 Experimental
 
-**[Building and distributing skills](#building-and-distributing-skills)**
+**🚢 [Building and distributing skills](#-building-and-distributing-skills)**
 
-- 🤖 [**agent-skills-toolkit**](#-agent-skills-toolkit) - A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar · *active*
-- 🧩 [**agent-plugins**](#-agent-plugins) - The marketplace that puts every Product on Purpose plugin one command away · *active*
+- 🤖 [agent-skills-toolkit](#-agent-skills-toolkit) - a standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar · 🟢 Stable · 🚀 Start here
+- 🧩 [agent-plugins](#-agent-plugins) - the plugin marketplace to install from · 🟢 Stable
+
+**💤 [In maintenance](#-in-maintenance)**
+
+- 🧰 [pm-skills-mcp](#-pm-skills-mcp) - the PM catalog as an MCP server · 🟤 Maintenance
 
 ---
 
-## Product work
+## 💼 Product work
 
-For product managers, and for the agents doing product work alongside them.
+For product managers, and for the agents doing product work alongside them. New here? Start with [pm-skills](#-pm-skills).
 
 ### 🧭 [pm-skills](https://github.com/product-on-purpose/pm-skills)
-*🟢 Active · 🚀 Flagship · 68 skills · 6 sub-agents · 12 workflows · 213 samples*
+
+*🟢 Stable · 🚀 Start here · Claude Code, Codex, Cursor, and more*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/pm-skills?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B0%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/pm-skills?style=flat-square)
 
-```bash
+```
 /plugin install pm-skills@product-on-purpose
 ```
 
-The flagship of the portfolio and the place most people should start. It hands your agent a curated set of best-practice product workflows to run on demand, end to end.
+Get professional-grade product management work from your agent without teaching it the method first. It hands your agent a curated set of best-practice product workflows to run on demand, end to end.
+
+**What's inside:** 68 skills, 6 sub-agents, 12 workflows, and 213 sample outputs.
 
 - **Stop prompting PM work from scratch.** Each skill is a best-practice workflow (PRDs, hypotheses, user stories, sprint facilitation) that you invoke by name instead of re-explaining the method every time.
 - **Covers the whole lifecycle.** From Foundation Sprint and Design Sprint at the fuzzy front end through discovery, delivery, and iteration, with sub-agents and workflow orchestrators that chain skills into full routines.
@@ -69,22 +77,25 @@ The flagship of the portfolio and the place most people should start. It hands y
 
 **Recent releases:**
 
-- [v2.33.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.33.0) (Sep 2026): PRDs, ADRs, and instrumentation specs gain sections for AI features, covering model behavior, evaluation, trace privacy, and model choice. Three user-reported fixes also landed, including prioritization that fits small teams.
+- [v2.33.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.33.0) (Aug 2026): PRDs, ADRs, and instrumentation specs gain sections for AI features, covering model behavior, evaluation, trace privacy, and model choice. Three user-reported fixes also landed, including prioritization that fits small teams.
 - [v2.32.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.32.0) (Aug 2026): Opt-in project memory lets eight skills reuse what earlier skills produced. For example, `deliver-prd` picks up the personas from `discover-interview-synthesis` instead of asking you to paste them again.
-- [v2.31.1](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.31.1) (Jul 2026): A maintenance patch cleared ten security alerts, four of them high severity, and repaired the documentation site build. Skill behavior did not change.
+- [v2.30.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.30.0) (Jul 2026): Four skills gained a "When NOT to Use" section, and eight skill descriptions now say when to pick a sibling skill instead. Setup instructions now cover Gemini CLI.
 
-**Status:** active, with a minor release every two to four weeks. Beyond Claude Code, it installs into Cursor, Copilot, Cline, and other agents with `npx skills add product-on-purpose/pm-skills`.
+**Status:** actively released, with a minor release every two to four weeks. Beyond Claude Code, it installs into Cursor, Copilot, Cline, and other agents with `npx skills add product-on-purpose/pm-skills`.
 
 ### 📐 [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates)
-*🧪 Experimental · 35 bundles · 9 families · lean/full sizes · MCP server · CI-gated*
+
+*🟡 Beta · 🧪 Experimental · Claude Code, MCP clients, and more*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/product-lifecycle-templates?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B5%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/product-lifecycle-templates?style=flat-square)
 
-```bash
+```
 /plugin install product-lifecycle-templates@product-on-purpose
 ```
 
-The document layer underneath the work. Where `pm-skills` runs the method, this decides what the resulting artifact should actually look like, and defends that shape with research rather than taste.
+Stop inventing the structure of every PRD, roadmap, and postmortem from scratch. Where `pm-skills` runs the method, this decides what the resulting artifact should actually look like, and defends that shape with research rather than taste.
+
+**What's inside:** 35 template bundles in nine families, two skills, and an MCP server.
 
 - **A bundle, not a blank file.** Every document type ships five pieces together: the blank shape you fill in, a companion explaining why it is shaped that way, a fast operator card, a fully worked example, and machine-readable metadata an agent can route on.
 - **Sized to your context window.** Every type offers a `lean` variant and most also offer `full`, each with an approximate token count, so an agent pulls the version that fits the job instead of blowing context on a template built for a different scale.
@@ -97,48 +108,29 @@ The document layer underneath the work. Where `pm-skills` runs the method, this 
 - [v0.13.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.13.0) (Sep 2026): An issue log and a definition of ready joined the library. The definition of ready treats keeping none as a legitimate choice, because several of its sources argue for that.
 - [v0.12.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.12.0) (Sep 2026): A launch coordination checklist arrived, grounded in Google's *Site Reliability Engineering* book. Its research quotations were checked against each source's own text, and 19 of 193 failed and were removed.
 
-**Status:** experimental. All 35 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
-
-### 🧰 [pm-skills-mcp](https://github.com/product-on-purpose/pm-skills-mcp)
-*🟤 Maintenance · MCP server · 59 tools (40 skills, 11 workflows, 8 utilities)*
-
-![npm](https://img.shields.io/npm/v/pm-skills-mcp?style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/pm-skills-mcp?style=flat-square)
-
-```bash
-npm install -g pm-skills-mcp
-```
-
-The same product management catalog, delivered over the Model Context Protocol for agents that prefer native tools to files.
-
-- **The PM catalog over Model Context Protocol.** Exposes 59 tools to any MCP-aware agent with no file setup.
-- **Stable, but paused.** It still works and still gets security patches, but it embeds 40 skills against the 68 in `pm-skills`, so new users are better served by the file-based install from `pm-skills`.
-
-**Recent releases:**
-
-- [v2.9.3](https://github.com/product-on-purpose/pm-skills-mcp/releases/tag/v2.9.3) (May 2026): A security patch cleared every open dependency advisory, so `npm audit` now reports zero vulnerabilities. The tools themselves did not change.
-- [v2.9.2](https://github.com/product-on-purpose/pm-skills-mcp/releases/tag/v2.9.2) (May 2026): The server entered maintenance mode with the 40-skill catalog embedded. Feature development is paused until there is demand for it.
-- [v2.8.2](https://github.com/product-on-purpose/pm-skills-mcp/releases/tag/v2.8.2) (Apr 2026): The documentation caught up with pm-skills v2.8.2. The server code did not change.
-
-**Status:** maintenance mode, with security patches and critical fixes only. Needs Node 18 or later. To ask for development to resume, [open a discussion](https://github.com/product-on-purpose/pm-skills-mcp/discussions).
+**Status:** the repository calls itself experimental. All 35 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
 
 ---
 
-## Thinking, writing, and critique
+## 🧠 Thinking, writing, and critique
 
-For anyone who wants an agent to reason, review, or write with a method rather than by feel.
+For anyone who wants an agent to reason, review, or write with a method rather than by feel. New here? Start with [thinking-framework-skills](#-thinking-framework-skills).
 
 ### 🤔 [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills)
-*🟢 Active · 63 frameworks · 4 meta-tools · 9 recipes · 3 subagents · evidence-graded · Advanced (Gold)*
+
+*🟡 Beta · 🚀 Start here · Claude Code, Codex, and more*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/thinking-framework-skills?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B1%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/thinking-framework-skills?style=flat-square)
 
-```bash
+```
 /plugin install thinking-framework-skills@product-on-purpose
 ```
 
-Structured reasoning your agent can actually execute, not just name-drop. Think of it as a toolbox of decision-making moves, each one graded so you know how far to trust it.
+Stop letting your agent improvise its reasoning on hard problems. This library is a toolbox of decision-making moves that your agent actually executes, each one graded so you know how far to trust it.
+
+**What's inside:** 63 frameworks, 4 meta-tools, 9 recipes, and 3 subagents.
 
 - **Agents reason better with a method.** Canonical thinking tools (premortems, first principles, parallel-perspective review) packaged so an agent runs the actual move, not a vague impression of it.
 - **Honest about the evidence.** Every skill carries a transparent grade, from replicated research down to practitioner heuristic, so you know how far to trust it. No laundered statistics.
@@ -151,18 +143,21 @@ Structured reasoning your agent can actually execute, not just name-drop. Think 
 - [v0.16.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.16.0) (Sep 2026): Five frameworks now publish a lower evidence grade, because a split grade is capped at its weaker half. The trust page also says which digit of its routing score is noise.
 - [v0.15.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.15.0) (Sep 2026): The trust page now measures whether an agent finds the library at all. The four entry-point tools were reached in 16 of 17 cases, with no false fires.
 
-**Status:** active, with four minor releases in September. Runs in Claude Code and Codex, and other agents can use `npx skills add product-on-purpose/thinking-framework-skills`. The subagents run in Claude Code only.
+**Status:** actively released, with four minor releases in September. Other agents can use `npx skills add product-on-purpose/thinking-framework-skills`, and the subagents run in Claude Code only. It grades Advanced (Gold) under the agent-skills-toolkit Standard.
 
 ### 🔍 [critique-skills](https://github.com/product-on-purpose/critique-skills)
-*🟡 Pre-release · 6 skills · 1 sub-agent · 96 criteria · 502 recorded runs · Convergent (Silver)*
+
+*🟡 Beta · Claude Code*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/critique-skills?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B4%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/critique-skills?style=flat-square)
 
-```bash
+```
 /plugin install critique-skills@product-on-purpose
 ```
 
-Review you can check instead of just trust. Ask a general-purpose model to critique your work and you get fluent, confident, forgettable commentary; these skills answer to a published rubric instead, and report how often they actually catch what is there.
+Ask a general-purpose model to critique your work, and you get fluent, confident, forgettable commentary. These skills answer to a published rubric instead, and report how often they actually catch what is there.
+
+**What's inside:** 6 skills, 1 reviewer subagent, 96 criteria, and a scorecard from 502 recorded runs.
 
 - **Every finding cites a source.** Each skill operationalizes a published external standard (WCAG 2.2, Nielsen's heuristics, Diataxis, the Toulmin model, the Federal Plain Language Guidelines), so every defect it raises carries a permanent criterion ID you can look up and argue with.
 - **Findings are records, not prose.** Output conforms to a frozen JSON Schema, so a critique can be diffed, filtered, tracked across revisions, or handed to another tool rather than read once and lost.
@@ -174,18 +169,21 @@ Review you can check instead of just trust. Ask a general-purpose model to criti
 - [v0.1.5](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.5) (Aug 2026): A script that ships with each skill now does the final tally and refuses to return an invalid report. On a small model, usable reports rose from 2 in 7 runs to 3 in 4.
 - [v0.1.4](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.4) (Aug 2026): No API key is needed anywhere, including for the benchmark behind the published numbers. The benchmark now runs through a Claude subscription.
 
-**Status:** pre-release, for Claude Code. Work has continued on `main` since the last release in August. For now, the benchmark can reproduce only the cheaper model tier's published figures, and the project says so.
+**Status:** the repository calls itself pre-release, and work has continued on `main` since the last release in August. For now, the benchmark can reproduce only the cheaper model tier's published figures, and the project says so. It grades Convergent (Silver) under the agent-skills-toolkit Standard.
 
-### ✍️ [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
-*🧪 Experimental · 97 entries · 1,164 examples · 158 diff-pairs · 14 recipes · 4 axes (Voice/Tone/Style/Format)*
+### 🎨 [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
+
+*🟡 Beta · 🧪 Experimental · Claude Code, Claude.ai, and Claude Desktop*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/writing-style-catalog?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B2%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![license](https://img.shields.io/badge/license-Apache--2.0%20%2B%20CC%20BY%204.0-blue?style=flat-square)
 
-```bash
+```
 /plugin install writing-style-catalog@product-on-purpose
 ```
 
-Composable control over how an agent sounds on the page. It turns "make it sound professional" into a precise, reusable instruction you can drop onto any writing task.
+Get an agent to write in the voice you want, not the one it defaults to. The catalog turns "make it sound professional" into a precise, reusable instruction you can drop onto any writing task.
+
+**What's inside:** 97 entries on four axes (Voice, Tone, Style, and Format), 1,164 worked examples, 158 diff-pairs, and 14 recipes.
 
 - **Make AI writing stop sounding like AI.** Compose precise, reusable instructions from named building blocks instead of retyping "make it sound professional" and hoping.
 - **Four orthogonal axes.** Mix Voice, Tone, Style, and Format independently to dial in exactly the register and shape a piece needs.
@@ -198,26 +196,29 @@ Composable control over how an agent sounds on the page. It turns "make it sound
 - [v0.13.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.13.0) (Aug 2026): Diff-pairs now cover all twelve anchor topics instead of five, and each of the 158 pairs carries written commentary.
 - [v0.12.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.12.0) (Jul 2026): A draft `marketer` voice arrived for landing pages and launch copy. It stays hidden from the recommender until it is reviewed.
 
-**Status:** experimental. The entry schema is frozen, but the catalog, skills, and docs may still change without notice. For Claude.ai or Claude Desktop, download the ZIP from the latest release.
+**Status:** the repository calls itself experimental. The entry schema is frozen, but the catalog, skills, and docs may still change without notice. For Claude.ai or Claude Desktop, download the ZIP from the latest release.
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
 
 ---
 
-## Building and distributing skills
+## 🚢 Building and distributing skills
 
-For people who author skill libraries, and for anyone installing from this one.
+For people who author skill libraries, and for anyone installing from this one. New here? Start with [agent-skills-toolkit](#-agent-skills-toolkit).
 
 ### 🤖 [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit)
-*🟢 Active · 26 skills · 7 subagents · 35 checks · Gold-in-CI*
+
+*🟢 Stable · 🚀 Start here · Claude Code, Codex, npm, and GitHub Actions*
 
 ![release](https://img.shields.io/github/v/release/product-on-purpose/agent-skills-toolkit?display_name=tag&style=flat-square) ![marketplace pin](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins%5B3%5D.version&label=marketplace&prefix=v&color=blue&style=flat-square) ![npm](https://img.shields.io/npm/v/agent-skills-toolkit?style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/agent-skills-toolkit?style=flat-square)
 
-```bash
+```
 /plugin install agent-skills-toolkit@product-on-purpose
 ```
 
-The meta-layer for anyone authoring skills at scale. It defines what a great, multi-agent skill library looks like, then gives you the tooling to prove yours measures up.
+Find out whether your skill library is actually good, and exactly what to fix next. It defines what a great, multi-agent skill library looks like, then gives you the tooling to prove yours measures up.
+
+**What's inside:** 26 skills, 7 subagents, and a grader with 35 checks.
 
 - **For people building skills, not just using them.** A toolkit and a normative Standard for authoring skill libraries that work across Claude Code and Codex from a single source.
 - **A quality bar you can climb.** Grades a whole library against a tiered Bronze/Silver/Gold rubric and returns a burndown of exactly what blocks the next tier.
@@ -230,21 +231,23 @@ The meta-layer for anyone authoring skills at scale. It defines what a great, mu
 - [v1.18.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.18.0) (Sep 2026): The GitHub Action is now documented and renamed Agent Skills Toolkit Grader. Its full report is published online, not just a badge.
 - [v1.17.1](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.17.1) (Sep 2026): A marketplace that uses Claude Code's new `command` source type is no longer failed by mistake.
 
-**Status:** active, for Claude Code and Codex. The npm package and the GitHub Action follow each release directly, and the marketplace pin can trail behind, so compare the badges above.
+**Status:** actively released. The npm package and the GitHub Action follow each release directly, and the marketplace pin can trail behind, so compare the badges above.
 
 ### 🧩 [agent-plugins](https://github.com/product-on-purpose/agent-plugins)
-*🟢 Active · Marketplace · Claude Code*
+
+*🟢 Stable · Marketplace · Claude Code*
 
 ![plugins listed](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.plugins.length&label=plugins%20listed&color=blue&style=flat-square) ![registry](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/product-on-purpose/agent-plugins/main/.claude-plugin/marketplace.json&query=%24.metadata.version&label=registry&prefix=v&color=blue&style=flat-square) ![last commit](https://img.shields.io/github/last-commit/product-on-purpose/agent-plugins?style=flat-square)
 
-```bash
+```
 /plugin marketplace add product-on-purpose/agent-plugins
 ```
 
-The registry that ties the whole ecosystem together. It is how every plugin above becomes a one-line install inside Claude Code.
+Add one marketplace, and every Product on Purpose plugin becomes a one-line install, including future ones.
+
+**What's inside:** only the catalog. There's a single `marketplace.json`, and each plugin keeps its own repository, versions, and issues.
 
 - **One front door to everything.** The Claude Code marketplace registry for the whole portfolio: add it once and every Product on Purpose plugin is a single command away.
-- **Deliberately thin.** No plugin code lives here, just the index, so it stays fast to load and easy to trust.
 - **Pinned, and watched.** Each entry pins a release commit, so nothing reaches you until it is re-pinned here, and a daily check flags any pin that falls behind its plugin's latest release.
 
 **Recent catalog changes:**
@@ -253,7 +256,36 @@ The registry that ties the whole ecosystem together. It is how every plugin abov
 - [Sep 25, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#1910---2026-09-25): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to v0.14.0, which adds an internal announcement and a change request.
 - [Sep 24, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#1900---2026-09-24): [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills) moved to v0.17.0, which adds two reasoning subagents for Claude Code. What installs on Codex does not change.
 
-**Status:** active, and all six listed plugins install now. You add the marketplace by its repository path, and you install each plugin by the marketplace name, `@product-on-purpose`.
+**Status:** live, and all six listed plugins install now. You add the marketplace by its repository path, and you install each plugin by the marketplace name, `@product-on-purpose`.
+
+<div align="right"><a href="#readme-top">Back to top ↑</a></div>
+
+---
+
+## 💤 In maintenance
+
+These projects still work, but they are no longer developed and get security fixes only.
+
+### 🧰 [pm-skills-mcp](https://github.com/product-on-purpose/pm-skills-mcp)
+
+*🟤 Maintenance · Any MCP client*
+
+![npm](https://img.shields.io/npm/v/pm-skills-mcp?style=flat-square) ![license](https://img.shields.io/github/license/product-on-purpose/pm-skills-mcp?style=flat-square)
+
+```bash
+npm install -g pm-skills-mcp
+```
+
+Give an agent that speaks the Model Context Protocol the product management catalog as native tools, with no file setup.
+
+**What's inside:** an MCP server with 59 tools: 40 skills, 11 workflows, and 8 utilities.
+
+**Recent releases:**
+
+- [v2.9.3](https://github.com/product-on-purpose/pm-skills-mcp/releases/tag/v2.9.3) (May 2026): A security patch cleared every open dependency advisory, so `npm audit` now reports zero vulnerabilities. The tools themselves did not change.
+- [v2.9.2](https://github.com/product-on-purpose/pm-skills-mcp/releases/tag/v2.9.2) (May 2026): The server entered maintenance mode with the 40-skill catalog embedded. Feature development is paused until there is demand for it.
+
+**Status:** in maintenance mode since May 2026, with security patches and critical fixes only. It carries 40 skills while pm-skills now has 68, so new users should install [pm-skills](#-pm-skills) instead. Needs Node 18 or later. To ask for development to resume, [open a discussion](https://github.com/product-on-purpose/pm-skills-mcp/discussions).
 
 ---
 
@@ -263,7 +295,7 @@ Each project carries its own license: Apache-2.0 for most, while writing-style-c
 
 Built and maintained by **Jonathan Prisant**, a product leader in church technology who gets unreasonably excited about solving problems, serving people, and designing elegant systems.
 
-[@jprisant](https://github.com/jprisant)
+[@jprisant](https://github.com/jprisant) · Sibling org: [Prisant Labs](https://github.com/prisant-labs), tailored tools for people who tinker or live in their editors, agents, and file systems
 
 </div>
 
