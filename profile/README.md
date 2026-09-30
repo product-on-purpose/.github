@@ -16,9 +16,18 @@ A general-purpose AI agent is a blank slate. Product on Purpose fills it in: ope
 
 Version badges on this page update themselves. Everything else is written by hand, including a plain status line for each project.
 
-**Status:** 🟢 Stable, meaning 1.0 or later, or a live service · 🟡 Beta, meaning released but not yet 1.0 · 🟠 Pre-release, meaning no release yet, so you build from source · 🟤 Maintenance, meaning it works but is no longer developed
+**Status**
 
-**Tags:** 🚀 Start here · 🆕 New, meaning public for under 30 days · 🧪 Experimental
+- 🟢 **Stable:** 1.0 or later, or a live service
+- 🟡 **Beta:** released, but not yet 1.0
+- 🟠 **Pre-release:** no release yet, so you build from source
+- 🟤 **Maintenance:** works, but no longer developed
+
+**Tags**
+
+- 🚀 **Start here:** the best first project in its category
+- 🆕 **New:** public for under 30 days
+- 🧪 **Experimental:** likely to change, and its status line says how
 
 ## Get started
 
@@ -30,25 +39,33 @@ Most of these install as Claude Code plugins. Add the marketplace once, then ins
 
 ## At a glance
 
-**💼 [Product work](#-product-work)**
+#### Product work
 
-- 🧭 [pm-skills](#-pm-skills) - 68 plug-and-play product management skills covering the full product lifecycle · 🟢 Stable · 🚀 Start here
-- 📐 [product-lifecycle-templates](#-product-lifecycle-templates) - governed document templates that ship with the research, the guide, and a worked example · 🟡 Beta · 🧪 Experimental
+🧭 **[pm-skills](#-pm-skills)** · 🟢 Stable · 🚀 Start here<br>68 plug-and-play product management skills covering the full product lifecycle
 
-**🧠 [Thinking, writing, and critique](#-thinking-writing-and-critique)**
+📐 **[product-lifecycle-templates](#-product-lifecycle-templates)** · 🟡 Beta · 🧪 Experimental<br>Governed document templates that ship with the research, the guide, and a worked example
 
-- 🤔 [thinking-framework-skills](#-thinking-framework-skills) - evidence-graded thinking methods an agent can run to reason, not just chat · 🟡 Beta · 🚀 Start here
-- 🔍 [critique-skills](#-critique-skills) - critique that cites a published rubric on every finding, and publishes how often it is right · 🟡 Beta
-- 🎨 [writing-style-catalog](#-writing-style-catalog) - composable writing instructions so AI prose lands in the voice you actually want · 🟡 Beta · 🧪 Experimental
 
-**🚢 [Building and distributing skills](#-building-and-distributing-skills)**
+#### Thinking, writing, and critique
 
-- 🤖 [agent-skills-toolkit](#-agent-skills-toolkit) - a standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar · 🟢 Stable · 🚀 Start here
-- 🧩 [agent-plugins](#-agent-plugins) - the plugin marketplace to install from · 🟢 Stable
+🤔 **[thinking-framework-skills](#-thinking-framework-skills)** · 🟡 Beta · 🚀 Start here<br>Evidence-graded thinking methods an agent can run to reason, not just chat
 
-**💤 [In maintenance](#-in-maintenance)**
+🔍 **[critique-skills](#-critique-skills)** · 🟡 Beta<br>Critique that cites a published rubric on every finding, and publishes how often it is right
 
-- 🧰 [pm-skills-mcp](#-pm-skills-mcp) - the PM catalog as an MCP server · 🟤 Maintenance
+🎨 **[writing-style-catalog](#-writing-style-catalog)** · 🟡 Beta · 🧪 Experimental<br>Composable writing instructions so AI prose lands in the voice you actually want
+
+
+#### Building and distributing skills
+
+🤖 **[agent-skills-toolkit](#-agent-skills-toolkit)** · 🟢 Stable · 🚀 Start here<br>A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar
+
+🧩 **[agent-plugins](#-agent-plugins)** · 🟢 Stable<br>The plugin marketplace to install from
+
+
+#### In maintenance
+
+🧰 **[pm-skills-mcp](#-pm-skills-mcp)** · 🟤 Maintenance<br>The PM catalog as an MCP server
+
 
 ---
 
@@ -82,6 +99,8 @@ Get professional-grade product management work from your agent without teaching 
 - [v2.30.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.30.0) (Jul 2026): Four skills gained a "When NOT to Use" section, and eight skill descriptions now say when to pick a sibling skill instead. Setup instructions now cover Gemini CLI.
 
 **Status:** actively released, with a minor release every two to four weeks. Beyond Claude Code, it installs into Cursor, Copilot, Cline, and other agents with `npx skills add product-on-purpose/pm-skills`.
+
+---
 
 ### 📐 [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates)
 
@@ -145,6 +164,8 @@ Stop letting your agent improvise its reasoning on hard problems. This library i
 
 **Status:** actively released, with four minor releases in September. Other agents can use `npx skills add product-on-purpose/thinking-framework-skills`, and the subagents run in Claude Code only. It grades Advanced (Gold) under the agent-skills-toolkit Standard.
 
+---
+
 ### 🔍 [critique-skills](https://github.com/product-on-purpose/critique-skills)
 
 *🟡 Beta · Claude Code*
@@ -170,6 +191,8 @@ Ask a general-purpose model to critique your work, and you get fluent, confident
 - [v0.1.4](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.4) (Aug 2026): No API key is needed anywhere, including for the benchmark behind the published numbers. The benchmark now runs through a Claude subscription.
 
 **Status:** the repository calls itself pre-release, and work has continued on `main` since the last release in August. For now, the benchmark can reproduce only the cheaper model tier's published figures, and the project says so. It grades Convergent (Silver) under the agent-skills-toolkit Standard.
+
+---
 
 ### 🎨 [writing-style-catalog](https://github.com/product-on-purpose/writing-style-catalog)
 
@@ -232,6 +255,8 @@ Find out whether your skill library is actually good, and exactly what to fix ne
 - [v1.17.1](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.17.1) (Sep 2026): A marketplace that uses Claude Code's new `command` source type is no longer failed by mistake.
 
 **Status:** actively released. The npm package and the GitHub Action follow each release directly, and the marketplace pin can trail behind, so compare the badges above.
+
+---
 
 ### 🧩 [agent-plugins](https://github.com/product-on-purpose/agent-plugins)
 
