@@ -39,32 +39,32 @@ Most of these install as Claude Code plugins. Add the marketplace once, then ins
 
 ## At a glance
 
-#### Product work
+### Product work
 
-🧭 **[pm-skills](#-pm-skills)** · 🟢 Stable · 🚀 Start here<br>68 plug-and-play product management skills covering the full product lifecycle
+- 🧭 **[pm-skills](#-pm-skills)** · 🟢 Stable · 🚀 Start here<br>68 plug-and-play product management skills covering the full product lifecycle
 
-📐 **[product-lifecycle-templates](#-product-lifecycle-templates)** · 🟡 Beta · 🧪 Experimental<br>Governed document templates that ship with the research, the guide, and a worked example
-
-
-#### Thinking, writing, and critique
-
-🤔 **[thinking-framework-skills](#-thinking-framework-skills)** · 🟡 Beta · 🚀 Start here<br>Evidence-graded thinking methods an agent can run to reason, not just chat
-
-🔍 **[critique-skills](#-critique-skills)** · 🟡 Beta<br>Critique that cites a published rubric on every finding, and publishes how often it is right
-
-🎨 **[writing-style-catalog](#-writing-style-catalog)** · 🟡 Beta · 🧪 Experimental<br>Composable writing instructions so AI prose lands in the voice you actually want
+- 📐 **[product-lifecycle-templates](#-product-lifecycle-templates)** · 🟡 Beta · 🧪 Experimental<br>Governed document templates that ship with the research, the guide, and a worked example
 
 
-#### Building and distributing skills
+### Thinking, writing, and critique
 
-🤖 **[agent-skills-toolkit](#-agent-skills-toolkit)** · 🟢 Stable · 🚀 Start here<br>A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar
+- 🤔 **[thinking-framework-skills](#-thinking-framework-skills)** · 🟡 Beta · 🚀 Start here<br>Evidence-graded thinking methods an agent can run to reason, not just chat
 
-🧩 **[agent-plugins](#-agent-plugins)** · 🟢 Stable<br>The plugin marketplace to install from
+- 🔍 **[critique-skills](#-critique-skills)** · 🟡 Beta<br>Critique that cites a published rubric on every finding, and publishes how often it is right
+
+- 🎨 **[writing-style-catalog](#-writing-style-catalog)** · 🟡 Beta · 🧪 Experimental<br>Composable writing instructions so AI prose lands in the voice you actually want
 
 
-#### In maintenance
+### Building and distributing skills
 
-🧰 **[pm-skills-mcp](#-pm-skills-mcp)** · 🟤 Maintenance<br>The PM catalog as an MCP server
+- 🤖 **[agent-skills-toolkit](#-agent-skills-toolkit)** · 🟢 Stable · 🚀 Start here<br>A standard and toolkit for grading skill libraries to a Bronze/Silver/Gold bar
+
+- 🧩 **[agent-plugins](#-agent-plugins)** · 🟢 Stable<br>The plugin marketplace to install from
+
+
+### In maintenance
+
+- 🧰 **[pm-skills-mcp](#-pm-skills-mcp)** · 🟤 Maintenance<br>The PM catalog as an MCP server
 
 
 ---
