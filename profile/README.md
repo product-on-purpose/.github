@@ -85,7 +85,7 @@ For product managers, and for the agents doing product work alongside them. New 
 
 Get professional-grade product management work from your agent without teaching it the method first. It hands your agent a curated set of best-practice product workflows to run on demand, end to end.
 
-**What's inside:** 68 skills, 6 sub-agents, 12 workflows, and 213 sample outputs.
+**What's inside:** 68 skills, 6 sub-agents, 12 workflows, and 203 sample outputs.
 
 - **Stop prompting PM work from scratch.** Each skill is a best-practice workflow (PRDs, hypotheses, user stories, sprint facilitation) that you invoke by name instead of re-explaining the method every time.
 - **Covers the whole lifecycle.** From Foundation Sprint and Design Sprint at the fuzzy front end through discovery, delivery, and iteration, with sub-agents and workflow orchestrators that chain skills into full routines.
@@ -94,11 +94,11 @@ Get professional-grade product management work from your agent without teaching 
 
 **Recent releases:**
 
+- [v2.35.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.35.0) (Oct 2026): A pilot found that none of three skills beat a plain model with no skill, so the planned headline was dropped. The release fixes 41 broken reference links, and two templates now match their skills.
+- [v2.34.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.34.0) (Oct 2026): Two planned AI skills lost a test against an analyst with no skill, so neither shipped. What survived went into `deliver-prd`, and samples now mark invented figures as fictional.
 - [v2.33.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.33.0) (Aug 2026): PRDs, ADRs, and instrumentation specs gain sections for AI features, covering model behavior, evaluation, trace privacy, and model choice. Three user-reported fixes also landed, including prioritization that fits small teams.
-- [v2.32.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.32.0) (Aug 2026): Opt-in project memory lets eight skills reuse what earlier skills produced. For example, `deliver-prd` picks up the personas from `discover-interview-synthesis` instead of asking you to paste them again.
-- [v2.30.0](https://github.com/product-on-purpose/pm-skills/releases/tag/v2.30.0) (Jul 2026): Four skills gained a "When NOT to Use" section, and eight skill descriptions now say when to pick a sibling skill instead. Setup instructions now cover Gemini CLI.
 
-**Status:** actively released, with a minor release every two to four weeks. Beyond Claude Code, it installs into Cursor, Copilot, Cline, and other agents with `npx skills add product-on-purpose/pm-skills`.
+**Status:** actively released, with two minor releases in October. Beyond Claude Code, it installs into Cursor, Copilot, Cline, and other agents with `npx skills add product-on-purpose/pm-skills`.
 
 ---
 
@@ -114,20 +114,20 @@ Get professional-grade product management work from your agent without teaching 
 
 Stop inventing the structure of every PRD, roadmap, and postmortem from scratch. Where `pm-skills` runs the method, this decides what the resulting artifact should actually look like, and defends that shape with research rather than taste.
 
-**What's inside:** 35 template bundles in nine families, two skills, and an MCP server.
+**What's inside:** 54 template bundles in eleven families, two skills, and an MCP server.
 
 - **A bundle, not a blank file.** Every document type ships five pieces together: the blank shape you fill in, a companion explaining why it is shaped that way, a fast operator card, a fully worked example, and machine-readable metadata an agent can route on.
 - **Sized to your context window.** Every type offers a `lean` variant and most also offer `full`, each with an approximate token count, so an agent pulls the version that fits the job instead of blowing context on a template built for a different scale.
-- **Reachable from any agent.** Two skills fill a template and grade a finished document, and an MCP server lets any MCP-aware agent search the catalog and fetch any of 71 template variants.
+- **Reachable from any agent.** Two skills fill a template and grade a finished document, and an MCP server lets any MCP-aware agent search the catalog and fetch any of 105 template variants.
 - **Cited, and gated on staying that way.** Shapes are argued from primary sources, and CI enforces the claims: bundle completeness, link health, research logs, manifest freshness, and even the repo's own self-reported counts.
 
 **Recent releases:**
 
-- [v0.14.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.14.0) (Sep 2026): Two new templates bring the library to 35. An internal announcement tells other teams what a change means for them, and a change request records the decision on it.
-- [v0.13.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.13.0) (Sep 2026): An issue log and a definition of ready joined the library. The definition of ready treats keeping none as a legitimate choice, because several of its sources argue for that.
-- [v0.12.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.12.0) (Sep 2026): A launch coordination checklist arrived, grounded in Google's *Site Reliability Engineering* book. Its research quotations were checked against each source's own text, and 19 of 193 failed and were removed.
+- [v0.24.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.24.0) (Oct 2026): Two one-page canvases arrive as the 53rd and 54th bundles. The Lean UX Canvas frames one initiative, and the Lean Canvas states a whole product's business model as beliefs to test.
+- [v0.23.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.23.0) (Oct 2026): A user research report reads out one study and recommends what to do next. It pairs with the user research plan, so a study can be planned and reported from the same library.
+- [v0.22.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.22.0) (Oct 2026): A user research plan opens a new family for research documents. The fifth efficacy run is published too: it was void on its main test, and the evidence still supports no quality claim.
 
-**Status:** the repository calls itself experimental. All 35 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
+**Status:** the repository calls itself experimental. All 54 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
 
@@ -158,11 +158,11 @@ Stop letting your agent improvise its reasoning on hard problems. This library i
 
 **Recent releases:**
 
-- [v0.17.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.17.0) (Sep 2026): In Claude Code, you can hand a decision stress test or a reasoning audit to a subagent. It runs the whole chain in its own context and returns only the finished brief.
-- [v0.16.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.16.0) (Sep 2026): Five frameworks now publish a lower evidence grade, because a split grade is capped at its weaker half. The trust page also says which digit of its routing score is noise.
-- [v0.15.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.15.0) (Sep 2026): The trust page now measures whether an agent finds the library at all. The four entry-point tools were reached in 16 of 17 cases, with no false fires.
+- [v0.20.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.20.0) (Nov 2026): The trust page corrects three claims about its skill-selection eval. An experiment to shorten skill descriptions failed a threshold set in advance, so it did not ship.
+- [v0.19.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.19.0) (Oct 2026): Six skills gain an optional step, and the belief-update routine now asks you to record your confidence before new evidence arrives. Four skills also hand set-aside material to a fresh context.
+- [v0.18.6](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.18.6) (Oct 2026): The premortem skill now says that, in one study, it lowered confidence in a flawed plan, instead of claiming it reduces overconfidence. The issue tree and pyramid principle evidence pages also report weaker findings.
 
-**Status:** actively released, with four minor releases in September. Other agents can use `npx skills add product-on-purpose/thinking-framework-skills`, and the subagents run in Claude Code only. It grades Advanced (Gold) under the agent-skills-toolkit Standard.
+**Status:** actively released, with three minor releases since mid-October. Other agents can use `npx skills add product-on-purpose/thinking-framework-skills`, and the subagents run in Claude Code only. It grades Advanced (Gold) under the agent-skills-toolkit Standard.
 
 ---
 
@@ -178,7 +178,7 @@ Stop letting your agent improvise its reasoning on hard problems. This library i
 
 Ask a general-purpose model to critique your work, and you get fluent, confident, forgettable commentary. These skills answer to a published rubric instead, and report how often they actually catch what is there.
 
-**What's inside:** 6 skills, 1 reviewer subagent, 96 criteria, and a scorecard from 502 recorded runs.
+**What's inside:** 7 skills, 1 reviewer subagent, 120 criteria, and a scorecard from 851 recorded runs.
 
 - **Every finding cites a source.** Each skill operationalizes a published external standard (WCAG 2.2, Nielsen's heuristics, Diataxis, the Toulmin model, the Federal Plain Language Guidelines), so every defect it raises carries a permanent criterion ID you can look up and argue with.
 - **Findings are records, not prose.** Output conforms to a frozen JSON Schema, so a critique can be diffed, filtered, tracked across revisions, or handed to another tool rather than read once and lost.
@@ -186,11 +186,11 @@ Ask a general-purpose model to critique your work, and you get fluent, confident
 
 **Recent releases:**
 
+- [v0.2.0](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.2.0) (Oct 2026): A seventh skill, `critique-forms`, reviews HTML forms for how easy they are to fill in, especially on a phone. A documentation site now shows every skill, criterion, and measured result.
 - [v0.1.6](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.6) (Aug 2026): A critique that could hang while searching your drives for its own scripts now finishes. Every published score also shows its run-to-run spread.
 - [v0.1.5](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.5) (Aug 2026): A script that ships with each skill now does the final tally and refuses to return an invalid report. On a small model, usable reports rose from 2 in 7 runs to 3 in 4.
-- [v0.1.4](https://github.com/product-on-purpose/critique-skills/releases/tag/v0.1.4) (Aug 2026): No API key is needed anywhere, including for the benchmark behind the published numbers. The benchmark now runs through a Claude subscription.
 
-**Status:** the repository calls itself pre-release, and work has continued on `main` since the last release in August. For now, the benchmark can reproduce only the cheaper model tier's published figures, and the project says so. It grades Convergent (Silver) under the agent-skills-toolkit Standard.
+**Status:** the repository calls itself pre-release, and its latest release shipped in October. The current benchmark does not reproduce the original Sonnet figures, and the project says so beside them. It grades Convergent (Silver) under the agent-skills-toolkit Standard.
 
 ---
 
@@ -206,7 +206,7 @@ Ask a general-purpose model to critique your work, and you get fluent, confident
 
 Get an agent to write in the voice you want, not the one it defaults to. The catalog turns "make it sound professional" into a precise, reusable instruction you can drop onto any writing task.
 
-**What's inside:** 97 entries on four axes (Voice, Tone, Style, and Format), 1,164 worked examples, 158 diff-pairs, and 14 recipes.
+**What's inside:** 98 entries on four axes (Voice, Tone, Style, and Format), 1,176 worked examples, 158 diff-pairs, and 14 recipes.
 
 - **Make AI writing stop sounding like AI.** Compose precise, reusable instructions from named building blocks instead of retyping "make it sound professional" and hoping.
 - **Four orthogonal axes.** Mix Voice, Tone, Style, and Format independently to dial in exactly the register and shape a piece needs.
@@ -215,9 +215,9 @@ Get an agent to write in the voice you want, not the one it defaults to. The cat
 
 **Recent releases:**
 
+- [v0.15.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.15.0) (Oct 2026): The `marketer` voice ships for landing pages and launch copy, which brings the catalog to 98 entries. The adherence evidence page now leads with all three of its results.
 - [v0.14.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.14.0) (Sep 2026): Every entry now carries an honest review status. All 97 are `machine-verified`, which means they pass every automated check but the maintainer has not yet read each one.
 - [v0.13.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.13.0) (Aug 2026): Diff-pairs now cover all twelve anchor topics instead of five, and each of the 158 pairs carries written commentary.
-- [v0.12.0](https://github.com/product-on-purpose/writing-style-catalog/releases/tag/v0.12.0) (Jul 2026): A draft `marketer` voice arrived for landing pages and launch copy. It stays hidden from the recommender until it is reviewed.
 
 **Status:** the repository calls itself experimental. The entry schema is frozen, but the catalog, skills, and docs may still change without notice. For Claude.ai or Claude Desktop, download the ZIP from the latest release.
 
@@ -241,7 +241,7 @@ For people who author skill libraries, and for anyone installing from this one. 
 
 Find out whether your skill library is actually good, and exactly what to fix next. It defines what a great, multi-agent skill library looks like, then gives you the tooling to prove yours measures up.
 
-**What's inside:** 26 skills, 7 subagents, and a grader with 35 checks.
+**What's inside:** 27 skills, 7 subagents, and a grader with 35 checks.
 
 - **For people building skills, not just using them.** A toolkit and a normative Standard for authoring skill libraries that work across Claude Code and Codex from a single source.
 - **A quality bar you can climb.** Grades a whole library against a tiered Bronze/Silver/Gold rubric and returns a burndown of exactly what blocks the next tier.
@@ -250,9 +250,9 @@ Find out whether your skill library is actually good, and exactly what to fix ne
 
 **Recent releases:**
 
-- [v1.19.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.19.0) (Sep 2026): A new check warns when Codex would silently drop a command because its converted skill is too large. Eight bugs from an external audit are fixed, including two patterns that could hang the grader.
-- [v1.18.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.18.0) (Sep 2026): The GitHub Action is now documented and renamed Agent Skills Toolkit Grader. Its full report is published online, not just a badge.
-- [v1.17.1](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.17.1) (Sep 2026): A marketplace that uses Claude Code's new `command` source type is no longer failed by mistake.
+- [v1.23.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.23.0) (Nov 2026): Evaluation reports gain a health number beside the tier, and every category reads `uncalibrated` for now. A fourth advisory screen looks for substance, and neither addition can change a grade.
+- [v1.22.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.22.0) (Oct 2026): A new `askit-onboard` skill guides a new adopter from a survey of their plugin to a roadmap. An advisory layer also reports portability, preload, and security notes beside the tier without changing it.
+- [v1.21.0](https://github.com/product-on-purpose/agent-skills-toolkit/releases/tag/v1.21.0) (Oct 2026): `gen-manifest --write` now refuses to drop or replace hand-written manifest fields that `library.json` does not supply. A grade also says when a plugin pins a newer Standard than the toolkit ships.
 
 **Status:** actively released. The npm package and the GitHub Action follow each release directly, and the marketplace pin can trail behind, so compare the badges above.
 
@@ -277,9 +277,9 @@ Add one marketplace, and every Product on Purpose plugin becomes a one-line inst
 
 **Recent catalog changes:**
 
-- [Sep 27, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#1920---2026-09-27): [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit) moved from v1.17.1 to v1.19.0, which carries two releases at once. Run `/plugin update agent-skills-toolkit` to get it.
-- [Sep 25, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#1910---2026-09-25): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to v0.14.0, which adds an internal announcement and a change request.
-- [Sep 24, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#1900---2026-09-24): [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills) moved to v0.17.0, which adds two reasoning subagents for Claude Code. What installs on Codex does not change.
+- [Nov 6, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11190---2026-11-06): [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills) moved to a release whose trust page corrects three claims about its skill-selection eval. It adds no skills.
+- [Nov 1, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11180---2026-11-01): [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit) moved to a release whose evaluation report adds a health number beside the grade. It cannot change a grade or a badge.
+- [Oct 30, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11170---2026-10-30): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to a release with two new bundles, the Lean UX Canvas and the Lean Canvas, its 53rd and 54th.
 
 **Status:** live, and all six listed plugins install now. You add the marketplace by its repository path, and you install each plugin by the marketplace name, `@product-on-purpose`.
 
