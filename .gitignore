@@ -8,3 +8,6 @@ _local/
 
 # Archived drafts and superseded content
 _archived/
+
+# Playwright MCP browser snapshots and logs
+.playwright-mcp/
