@@ -114,20 +114,20 @@ Get professional-grade product management work from your agent without teaching 
 
 Stop inventing the structure of every PRD, roadmap, and postmortem from scratch. Where `pm-skills` runs the method, this decides what the resulting artifact should actually look like, and defends that shape with research rather than taste.
 
-**What's inside:** 54 template bundles in eleven families, two skills, and an MCP server.
+**What's inside:** 56 template bundles in eleven families, two skills, and an MCP server.
 
 - **A bundle, not a blank file.** Every document type ships five pieces together: the blank shape you fill in, a companion explaining why it is shaped that way, a fast operator card, a fully worked example, and machine-readable metadata an agent can route on.
 - **Sized to your context window.** Every type offers a `lean` variant and most also offer `full`, each with an approximate token count, so an agent pulls the version that fits the job instead of blowing context on a template built for a different scale.
-- **Reachable from any agent.** Two skills fill a template and grade a finished document, and an MCP server lets any MCP-aware agent search the catalog and fetch any of 105 template variants.
+- **Reachable from any agent.** Two skills fill a template and grade a finished document, and an MCP server lets any MCP-aware agent search the catalog and fetch any of 108 template variants.
 - **Cited, and gated on staying that way.** Shapes are argued from primary sources, and CI enforces the claims: bundle completeness, link health, research logs, manifest freshness, and even the repo's own self-reported counts.
 
 **Recent releases:**
 
+- [v0.26.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.26.0) (Nov 2026): A platform and device support matrix arrives as the 56th bundle. It records which browsers and devices a product supports, at what grade, and which ones the team tests.
+- [v0.25.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.25.0) (Nov 2026): A requirements traceability matrix arrives as the 55th bundle. It links each requirement to the tests that verify it, and its guide starts with who should not keep one.
 - [v0.24.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.24.0) (Oct 2026): Two one-page canvases arrive as the 53rd and 54th bundles. The Lean UX Canvas frames one initiative, and the Lean Canvas states a whole product's business model as beliefs to test.
-- [v0.23.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.23.0) (Oct 2026): A user research report reads out one study and recommends what to do next. It pairs with the user research plan, so a study can be planned and reported from the same library.
-- [v0.22.0](https://github.com/product-on-purpose/product-lifecycle-templates/releases/tag/v0.22.0) (Oct 2026): A user research plan opens a new family for research documents. The fifth efficacy run is published too: it was void on its main test, and the evidence still supports no quality claim.
 
-**Status:** the repository calls itself experimental. All 54 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
+**Status:** the repository calls itself experimental. All 56 bundles are marked beta, and the project claims none of them is proven. You can also clone the repository, add it with `npx skills add product-on-purpose/product-lifecycle-templates`, or [read every bundle online](https://product-on-purpose.github.io/product-lifecycle-templates/).
 
 <div align="right"><a href="#readme-top">Back to top ↑</a></div>
 
@@ -158,9 +158,9 @@ Stop letting your agent improvise its reasoning on hard problems. This library i
 
 **Recent releases:**
 
+- [v0.21.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.21.0) (Nov 2026): The routing eval now makes its agents read the whole catalog, and routing scored 376 of 376 with no false fires. The catalog also fixes 26 answer-key entries. Routing for users does not change.
 - [v0.20.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.20.0) (Nov 2026): The trust page corrects three claims about its skill-selection eval. An experiment to shorten skill descriptions failed a threshold set in advance, so it did not ship.
 - [v0.19.0](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.19.0) (Oct 2026): Six skills gain an optional step, and the belief-update routine now asks you to record your confidence before new evidence arrives. Four skills also hand set-aside material to a fresh context.
-- [v0.18.6](https://github.com/product-on-purpose/thinking-framework-skills/releases/tag/v0.18.6) (Oct 2026): The premortem skill now says that, in one study, it lowered confidence in a flawed plan, instead of claiming it reduces overconfidence. The issue tree and pyramid principle evidence pages also report weaker findings.
 
 **Status:** actively released, with three minor releases since mid-October. Other agents can use `npx skills add product-on-purpose/thinking-framework-skills`, and the subagents run in Claude Code only. It grades Advanced (Gold) under the agent-skills-toolkit Standard.
 
@@ -277,9 +277,9 @@ Add one marketplace, and every Product on Purpose plugin becomes a one-line inst
 
 **Recent catalog changes:**
 
-- [Nov 6, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11190---2026-11-06): [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills) moved to a release whose trust page corrects three claims about its skill-selection eval. It adds no skills.
-- [Nov 1, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11180---2026-11-01): [agent-skills-toolkit](https://github.com/product-on-purpose/agent-skills-toolkit) moved to a release whose evaluation report adds a health number beside the grade. It cannot change a grade or a badge.
-- [Oct 30, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11170---2026-10-30): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to a release with two new bundles, the Lean UX Canvas and the Lean Canvas, its 53rd and 54th.
+- [Nov 13, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11220---2026-11-13): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to a release with a new platform and device support matrix bundle, its 56th.
+- [Nov 7, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11210---2026-11-07): [thinking-framework-skills](https://github.com/product-on-purpose/thinking-framework-skills) moved to a release whose routing eval reads the whole catalog. It adds no skills.
+- [Nov 7, 2026](https://github.com/product-on-purpose/agent-plugins/blob/main/CHANGELOG.md#11200---2026-11-07): [product-lifecycle-templates](https://github.com/product-on-purpose/product-lifecycle-templates) moved to a release with a new requirements traceability matrix bundle, its 55th.
 
 **Status:** live, and all six listed plugins install now. You add the marketplace by its repository path, and you install each plugin by the marketplace name, `@product-on-purpose`.
 
